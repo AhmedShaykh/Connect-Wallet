@@ -18,7 +18,7 @@ import {
 } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 
-const projectId = process.env.NEXT_PUBLIC_PROJECT_ID!;
+const projectId = "WALLET_KEY";
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
     [polygonMumbai, sepolia, lineaTestnet],
