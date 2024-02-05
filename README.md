@@ -1,1 +1,1 @@
-# Web 3 Wallet Connect In Next.JS!
+# Decentralized Web 3 Wallets Connect In Next.JS!
