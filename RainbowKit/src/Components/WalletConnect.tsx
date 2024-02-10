@@ -1,10 +1,10 @@
 "use client";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import ConnectWallet from "./ConnectWallet";
 
 const WalletConnect = () => {
     return (
         <div className="grid place-items-center h-screen">
-            <ConnectButton />
+            <ConnectWallet />
         </div>
     )
 };
