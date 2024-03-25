@@ -28,3 +28,19 @@ body {
     text-wrap: balance;
   }
 }
+
+.button {
+  background-color: rgb(0, 108, 248) !important;
+  border-radius: 10px !important;
+  box-shadow: 0px 0px 20px 2px rgba(100, 230, 250, 0.7) !important;
+  color: white !important;
+  cursor: pointer !important;
+  padding: 18px 24px !important;
+  font-size: 1.2rem !important;
+  transition: all 0.15s ease-in-out !important;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 40px 5px rgba(100, 230, 250, 0.7) !important;
+  transform: translateY(-2px) !important;
+}

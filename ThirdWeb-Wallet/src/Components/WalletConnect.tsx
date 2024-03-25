@@ -1,17 +1,33 @@
 "use client";
-import { ConnectWallet, darkTheme } from "@thirdweb-dev/react";
+import { ConnectWallet, useAddress, useConnectionStatus, useDisconnect } from "@thirdweb-dev/react";
 
 const WalletConnect = () => {
+
+    const connectionStatus = useConnectionStatus();
+
+    const disconnect = useDisconnect();
+
+    const address = useAddress();
+
+    if (connectionStatus === "connected") {
+        return (
+            <div className="grid place-items-center h-screen">
+                <button
+                    className="button"
+                    onClick={disconnect}
+                >
+                    {address}
+                </button>;
+            </div>
+        )
+    }
+
     return (
         <div className="grid place-items-center h-screen">
             <ConnectWallet
-                theme={darkTheme({
-                    colors: {
-                        accentText: "#0acce6",
-                        accentButtonBg: "#0acce6",
-                    },
-                })}
-                modalSize={"compact"}
+                btnTitle="Connect Wallet"
+                className="button"
+                modalSize={"wide"}
             />
         </div>
     )

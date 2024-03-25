@@ -1,11 +1,11 @@
 "use client";
 import {
     ThirdwebProvider,
-    coinbaseWallet,
     embeddedWallet,
     metamaskWallet,
     rainbowWallet,
     walletConnect,
+    phantomWallet,
     en
 } from "@thirdweb-dev/react";
 
@@ -18,8 +18,8 @@ const Provider = ({ children }: { children: React.ReactNode }) => {
             supportedWallets={[
                 metamaskWallet({ recommended: true }),
                 rainbowWallet({ recommended: true }),
-                coinbaseWallet(),
                 walletConnect(),
+                phantomWallet(),
                 embeddedWallet({
                     auth: {
                         options: [
