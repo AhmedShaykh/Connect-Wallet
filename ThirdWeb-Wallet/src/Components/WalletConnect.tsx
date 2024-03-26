@@ -1,5 +1,11 @@
 "use client";
-import { ConnectWallet, useAddress, useConnectionStatus, useDisconnect } from "@thirdweb-dev/react";
+import { formatAddress } from "@/lib/utils";
+import {
+    ConnectWallet,
+    useAddress,
+    useConnectionStatus,
+    useDisconnect
+} from "@thirdweb-dev/react";
 
 const WalletConnect = () => {
 
@@ -13,11 +19,13 @@ const WalletConnect = () => {
         return (
             <div className="grid place-items-center h-screen">
                 <button
-                    className="button"
+                    className="userButton"
                     onClick={disconnect}
                 >
-                    {address}
-                </button>;
+                    {formatAddress(address)}
+                </button>
+
+                <ConnectWallet className="userButton" />
             </div>
         )
     }
@@ -26,7 +34,7 @@ const WalletConnect = () => {
         <div className="grid place-items-center h-screen">
             <ConnectWallet
                 btnTitle="Connect Wallet"
-                className="button"
+                className="connectButton"
                 modalSize={"wide"}
             />
         </div>
