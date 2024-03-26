@@ -1,6 +1,7 @@
 "use client";
 import WalletConnect from "@/Components/WalletConnect";
 import { MetaMaskProvider } from "@metamask/sdk-react";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const Home = () => {
 
@@ -16,9 +17,11 @@ const Home = () => {
     };
 
     return (
-        <MetaMaskProvider debug={false} sdkOptions={sdkOptions}>
-            <WalletConnect />
-        </MetaMaskProvider>
+        <ClerkProvider>
+            <MetaMaskProvider debug={false} sdkOptions={sdkOptions}>
+                <WalletConnect />
+            </MetaMaskProvider>
+        </ClerkProvider>
     )
 };
 

@@ -4,6 +4,12 @@ import { Button } from "@/Components/ui/button";
 import { formatAddress } from "@/lib/utils";
 import WalletButton from "./WalletButton";
 import { useSDK } from "@metamask/sdk-react";
+import {
+    SignIn,
+    SignOutButton,
+    UserButton,
+    useUser
+} from "@clerk/nextjs";
 
 const WalletConnect = () => {
 
@@ -32,8 +38,26 @@ const WalletConnect = () => {
 
     };
 
+    const { user } = useUser();
+
+    const primaryWeb3Wallet = user?.primaryWeb3Wallet;
+
     return (
         <div className="grid place-items-center h-screen">
+            <div className="flex flex-col items-center gap-4">
+                <UserButton />
+
+                <p>
+                    Address:{" "}
+                    {primaryWeb3Wallet ? primaryWeb3Wallet.web3Wallet : "Not found"}
+                </p>
+                <Button
+                    className="px-8 py-4 text-md text-center text-[black] hover:bg-gray-200"
+                >
+                    <SignOutButton />
+                </Button>
+            </div>
+
             {connected ? (
                 <Popover>
                     <PopoverTrigger>
