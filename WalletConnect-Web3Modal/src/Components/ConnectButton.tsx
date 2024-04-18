@@ -33,7 +33,7 @@ const ConnectButton = () => {
             <w3m-button />
 
             <button
-                className="bg-zinc-800 py-3 px-5 rounded-full text-md font-semibold"
+                className="bg-zinc-900 py-3 px-5 rounded-full text-md font-semibold"
                 onClick={() => open({ view: "Account" }) || disconnect()}
             >
                 {formatAddress(address)}

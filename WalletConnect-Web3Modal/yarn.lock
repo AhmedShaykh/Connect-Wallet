@@ -3035,11 +3035,6 @@ globby@^11.1.0:
     merge2 "^1.4.1"
     slash "^3.0.0"
 
-goober@^2.1.10:
-  version "2.1.14"
-  resolved "https://registry.yarnpkg.com/goober/-/goober-2.1.14.tgz#4a5c94fc34dc086a8e6035360ae1800005135acd"
-  integrity sha512-4UpC0NdGyAFqLNPnhCT2iHpza2q+RAY3GV85a/mRPdzyPQMsj0KmMMuetdIkzWRbJ+Hgau1EZztq8ImmiMGhsg==
-
 gopd@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/gopd/-/gopd-1.0.1.tgz#29ff76de69dac7489b7c0918a5788e56477c332c"
@@ -4517,13 +4512,6 @@ react-dom@^18, react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
-react-hot-toast@^2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/react-hot-toast/-/react-hot-toast-2.4.1.tgz#df04295eda8a7b12c4f968e54a61c8d36f4c0994"
-  integrity sha512-j8z+cQbWIM5LY37pR6uZR6D4LfseplqnuAO4co4u8917hBUvXlEqyP1ZzqVLcqoyUesZZv/ImreoCeHVDpE5pQ==
-  dependencies:
-    goober "^2.1.10"
-
 react-i18next@^13.2.2:
   version "13.5.0"
   resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-13.5.0.tgz#44198f747628267a115c565f0c736a50a76b1ab0"
@@ -5389,10 +5377,10 @@ viem@^1.0.0, viem@^1.1.4:
     isows "1.0.3"
     ws "8.13.0"
 
-viem@^2.9.18:
-  version "2.9.18"
-  resolved "https://registry.yarnpkg.com/viem/-/viem-2.9.18.tgz#5f24982fd4f186e90f1ed304e05054ebb4f263b9"
-  integrity sha512-QULuau6DWDVRjGDVIUPuUybqiYu8mxscvwkKQ7dqNRl6w/t8RWs92aJZSQpqEULoERlKYyFFlj7cz4mWFEchsg==
+viem@^2.9.21:
+  version "2.9.21"
+  resolved "https://registry.yarnpkg.com/viem/-/viem-2.9.21.tgz#a7dd3d4c827088e5336e5a6b35ec0283d2938595"
+  integrity sha512-8GtxPjPGpiN5cmr19zSX9mb1LX/eON3MPxxAd3QmyUFn69Rp566zlREOqE7zM35y5yX59fXwnz6O3X7e9+C9zg==
   dependencies:
     "@adraffy/ens-normalize" "1.10.0"
     "@noble/curves" "1.2.0"
